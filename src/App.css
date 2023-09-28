@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.App {
+  width: 100vw;
+}
+
+.first-page {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+  justify-content: space-between;
+  animation: 1s linear forwards fadeIn;
+}
+
+.first-text {
+  color: white;
+  font-size: 3vw;
+  animation: 0.4s ease-in slideInFromBottom;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.read-more {
+  margin-top: 1rem;
+  background-color: #007afe;
+  width: 10rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 0 0.8rem 0;
+  color: white;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  cursor: pointer;
+}
+
+/* add media query for responsiv */
+@media screen and (max-width: 750px) {
+  .first-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .read-more {
+    margin-bottom: 4rem;
+  }
+}
+
+/* add animation */
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translatey(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

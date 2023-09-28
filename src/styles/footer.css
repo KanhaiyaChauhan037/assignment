@@ -1,0 +1,32 @@
+.footer{
+    background-color: #081528;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.footer-options{
+    display: flex;
+    list-style-type: none;
+    margin-top: 1rem;
+    width: 30rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.option{
+    color: white;
+    font-weight: 500;
+}
+
+.address{
+    margin-top: 2rem;
+    color: grey;
+}
+
+.socials{
+    margin-top: 2rem;
+    
+}

@@ -1,0 +1,67 @@
+.industries {
+  display: flex;
+  margin: 2rem 3rem 4rem 3rem;
+  justify-content: space-between;
+  animation: 0.4s ease-in slideInFromBottom;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ff3a2c;
+}
+
+.info {
+  margin-top: 2rem;
+}
+
+.desc {
+  margin-top: 1.5rem;
+  text-align: justify;
+  line-height: 1.8rem;
+  color: black;
+}
+
+.read-more-button {
+  margin-top: 3rem;
+  background-color: #ff3a2c;
+  width: 8rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 0 0.8rem 0;
+  color: white;
+  font-weight: bold;
+}
+
+.read-more-button:hover {
+  cursor: pointer;
+}
+
+.img {
+  width: 48%;
+  height: auto;
+}
+
+/*add media query for responsivness*/
+@media screen and (max-width: 1000px) {
+  .industries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    margin-top: 0rem;
+  }
+
+  .read-more-button {
+    margin-bottom: 4rem;
+  }
+
+  .img {
+    width: 100%;
+  }
+}

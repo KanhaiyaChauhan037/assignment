@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 3rem 0.3rem 3rem;
+    position: sticky;
+    top: 0;
+    height: 7vh;
+    z-index: 5;
+  }
+  
+  .nav-links {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+  }
+  
+  .link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Futura";
+    display: flex;
+    position: relative;
+    height: 7vh;
+    font-size:large;
+    font-weight:500;
+    padding-bottom: 0.3rem;
+    align-items: center;
+  }
+  
+  .link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 1rem;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+  .link:hover{
+    cursor: pointer;
+  }
+  
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* style for model nav for small screen */
+
+  .modal-nav{
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .modal-nav-links{
+    margin : 10rem 0 0 2rem;
+  }
+
+  .modal-link{
+    color: black;
+    margin : 2rem 0 2rem 0;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  .modal-dropdown{
+    list-style-type: none;
+    margin-left: 1.5rem;
+   
+  }
+
+  .modal-dropdown-items{
+    font-size: small;
+    font-weight: 300;
+    margin: 1rem 0 1rem 0;
+   
+   
+  }
+
+  .smaller-screens{
+    display: none;
+  }
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media screen and (max-width : 1200px){
+
+  .nav-links{
+    display: none;
+  }
+
+  .link{
+    font-size: 1.5rem;
+  }
+
+  .smaller-screens{
+    display: block;
+  }
+}
