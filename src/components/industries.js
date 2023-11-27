@@ -35,7 +35,7 @@ function Industries({ isOdd, title, desc, img,  isLast }) {
         >
           <h3 className="title">{title}</h3>
           <p className="desc">{desc}</p>
-          <a href=" "><button className="read-more-button">Read More</button></a>
+          <a href=""><button className="read-more-button">Read More</button></a>
         </div>
         <img src={img} alt="Industry Image" className="img" />
       </div>
