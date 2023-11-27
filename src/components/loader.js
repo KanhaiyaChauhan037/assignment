@@ -13,7 +13,7 @@ function Loader() {
         justifyContent: "center",
       }}
     >
-      <img src={lg} alt="logo" width="100vw" className="logo-spinner" />
+      <img src="https://cdn.dribbble.com/users/830587/screenshots/4381223/loader_gif.gif" alt="logo" width="100vw" className="logo-spinner" />
       <div class="loader"></div>
     </div>
   );
