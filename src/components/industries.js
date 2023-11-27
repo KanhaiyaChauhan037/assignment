@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/industries.css";
 import AnimateIn from "../utils/AnimateIn";
 
-function Industries({ isOdd, title, desc, img, href, isLast }) {
+function Industries({ isOdd, title, desc, img,  isLast }) {
   const [windowWidth, setWindowWidth] = useState(window.screen.width);
 
   const handleResize = () => {
